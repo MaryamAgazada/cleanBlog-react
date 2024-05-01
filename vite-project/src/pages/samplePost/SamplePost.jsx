@@ -1,7 +1,13 @@
 import React from 'react'
 import "./Sample.css"
 import { Link } from 'react-router-dom'
+import { useState } from 'react';
 function SamplePost() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div>
        <nav className='navbar'>
@@ -19,6 +25,9 @@ function SamplePost() {
           <li>
             <Link className='items' to="/Contact.jsx">contact</Link>
           </li>
+          <div className={`menu-icon ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <div className="menu-icon__line"><i class="fa-solid fa-bars"></i></div>
+      </div>
         </ul>
       </nav>
        <main>

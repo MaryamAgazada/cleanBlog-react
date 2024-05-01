@@ -2,7 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 // import { library } from '@fortawesome/fontawesome-svg-core'
 import "./Home.css"
+import { useState } from 'react';
 function Home() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+      setIsOpen(!isOpen);
+    };
   return (
     <div>
          <nav className='navbar'>
@@ -20,6 +26,9 @@ function Home() {
           <li>
             <Link className='items' to="/Contact.jsx">contact</Link>
           </li>
+          <div className={`menu-icon ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <div className="menu-icon__line"><i class="fa-solid fa-bars"></i></div>
+      </div>
         </ul>
       </nav>
       <main>
