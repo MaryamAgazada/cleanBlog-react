@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero__about{
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0,0.5) , rgba(0, 0, 0,0.5)), url("https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/about-bg.jpg");
+    /* width: 100%; */
+    width:1263px;
+    min-height:500px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    object-fit: cover;
+    .hero__title{
+        font-size:80px;
+        font-weight: 800;
+        line-height: 1.2;
+        margin: 0 0 8px;
+    }
+    .hero__text{
+        font-size: 24px;
+        margin: 0 0 10px;
+        font-weight: 300;
+    line-height: 1.1;
+    }
+    
+}
+@media only screen and (max-width:768px) {
+ .hero__title{
+ font-size:48px;
+ }
+ .hero__text{
+    font-size:24px;
+ }
+
+}
+.main__about{
+    font-family: "Lora", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:24px 0;
+    p{
+        font-size: 20px;
+        margin: 32px 0;
+        min-height:150px ;
+        max-width:589px;
+        line-height: 1.5;
+    
+    }
+}
+@media only screen and (max-width:425px) {
+.main__about{
+    p{
+display: grid;
+place-items: center;
+height: 240px !important;
+width: 310px !important;
+}
+}
+}

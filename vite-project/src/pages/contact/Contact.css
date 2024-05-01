@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero__contact{
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0,0.5) , rgba(0, 0, 0,0.5)), url("https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/contact-bg.jpg");
+    /* width: 100%; */
+    width:1263px;
+    min-height:500px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    object-fit: cover;
+    .hero__title{
+        font-size:80px;
+        font-weight: 800;
+        line-height: 1.2;
+    }
+    .hero__text{
+        font-size: 24px;
+        margin: 0 0 10px;
+        font-weight: 300;
+    line-height: 1.1;
+    }
+    
+}
+.main__contact{
+    min-height: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .contact__text{
+margin: 32px 0;
+font-size: 1.25rem;
+min-height: 60px;
+max-width: 530px;
+line-height: 1.5;
+    }
+    .form{
+        width: 100%;
+        max-width: 589px;
+        min-height: 492px;
+       padding: 0 24px;
+       input{
+        width: 100%;
+        min-height:72px;
+        max-width:589px;
+        font-size:20px;
+        border-bottom:1px solid #6c757d;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        padding: 20px 0;
+        display: block; 
+        line-height: 1.25; 
+        color: #6c757d;
+        display: block;
+    .message{
+        min-height: 192px;
+    }
+&:hover{
+    border-bottom:1px solid  #0085A1;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+}
+    .send{
+        background-color:#0085A1;;
+        color: white;
+    border: 1px solid #0085A1;;
+    /* max-width: ; */
+    padding: 16px;
+   padding:16px 25px;
+    margin-top: 25px;
+    font-family: "Lora", serif;
+    font-weight: 800;
+    }
+}
+}
+
+
+@media only screen and (max-width:768px) {
+    .hero__title{
+    font-size:48px;
+    }
+    .hero__text{
+       font-size:24px;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    .main__contact {
+      max-width: 100%;
+      padding: 0 20px; 
+    }
+    .main_contact
+     .contact_text {
+      max-width: 100%; 
+    }
+    .main__contact 
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center; 
+      width: 100%; 
+    }
+    .main__contact .form input {
+      width: 100%; 
+      margin-bottom: 15px; 
+    }
+  }
+
+
+
+
